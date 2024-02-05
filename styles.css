@@ -1,0 +1,295 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(/assets/Norse-Bold.otf);
+}
+
+:root {
+    --main-color: rgba(215, 111, 7, 0.83);
+    --error-color: rgba(209, 41, 41, 0.65);
+    --pass-green: rgb(31, 157, 33);
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    color: black;
+}
+
+
+
+.side-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: auto ;
+}
+
+.section-one {
+    height: 35vh;
+    background-color: whitesmoke;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.section-one .main-text {
+    margin-top: 50px;
+}
+
+.text {
+    font-weight: bold;
+}
+
+.section-one span {
+    font-style: italic;
+}
+
+.main-text {
+    margin-bottom: 20px;
+}
+
+.section-two {
+    height: 30vh;
+    background: white;
+    padding: 0px 40px;
+    border-radius: 3px;
+    margin-bottom: 10px;  
+}
+
+.section-two p { 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-two input {
+   margin-right: 60px;
+   margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.section-two label {
+    font-size: 10px;
+    color: rgb(97, 97, 97);
+    font-weight: bold ;
+}
+
+.section-two input {
+    width: 200px;
+    display: block;
+}
+
+.section-three {
+    height: 35vh;
+    background-color: whitesmoke;
+    padding: 40px;
+}
+
+.section-three button {
+    background-color: var(--main-color);
+    color: white;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    width: 170px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-three a {
+    color: var(--main-color);
+}
+
+.side-background a {
+    color: rgb(181, 180, 180);
+}
+
+
+.side-background {
+    background-image: url(/assets/jorge-bermudez-fhOK0rtnxgM-unsplash.jpg);
+    background-size: cover;
+    width: 100vh;
+    display: flex;
+    flex-grow: 0;
+    background-color: transparent;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: fill;
+}
+
+.credits {
+    color: white;
+    margin-bottom: 20px;
+}
+.logo {
+    width: auto;
+    height: 100px;
+    
+}
+
+.name {
+    color: white;
+    font-size: 75px;
+    font-family: norse-bold;
+}
+
+.side-container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.75;
+    margin-top: 150px;
+    height: 120px;
+}
+
+input {
+    background-color:transparent;
+    border: 2px solid grey;
+    border-radius: 5px;
+    outline:none;
+    
+}
+
+input:focus {
+    outline:none;
+    border: 2px solid rgb(35, 186, 178);
+    box-shadow: 3px 1.5px 3px 0px rgba(99, 99, 99, 0.45)
+}
+
+.pass {
+    display: block;
+    color: var(--error-color);
+    margin-top: -15px;
+    font-size: 10px;
+}
+
+.pass-true {
+    border: 2px solid skyblue;
+}
+
+.error {
+    border: 2px solid var(--error-color);
+}
+
+.second-container {
+    display: flex; 
+}
+
+/*#user_name, #user_lastname, #user_email, #user_phone:required {
+    border: 2px solid gray;
+}*/
+
+
+input:invalid {
+    border: 2px solid var(--error-color);
+}
+
+input:focus {
+    border: 2px solid skyblue;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1122px) {
+    .section-two input {
+        width: 100px;
+        display: block;
+        margin: 0;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+    .section-two {
+        padding: 0;
+        margin-left: 40px;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-two input {
+        width: 100px;
+        display: block;
+        margin: 0;
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+    .section-two {
+        padding: 0;
+        margin-left: 40px;
+    }  
+  }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .section-two input {
+        width: 80px;
+        display: block;
+        margin: 0;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .section-two {
+        padding: 0;
+        margin-left: 40px;
+    }  
+  }
+  @media (min-width: 200px) and (max-width: 481px) {
+    .section-two input {
+        width: 61px;
+        display: block;
+        margin: 0;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .section-two {
+        padding: 0;
+        margin-left: 40px;
+    } 
+  }
+  
+

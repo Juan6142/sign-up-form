@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-background">
+            <div class="side-container">
+                <img class="logo" src="assets/odin-lined.png" alt="odin logo">
+                <div class="name">ODIN</div>
+                
+            </div>
+           <p class="credits">Photo by <a href="https://unsplash.com/@jorge_bermudez_r?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jorge Bermudez</a> on <a href="https://unsplash.com/photos/a-person-standing-in-front-of-a-sunset-fhOK0rtnxgM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+           </p>     
+        </div>
+        
+        <div class="side-content">
+            <div class="section-one">
+                <p class="main-text text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to started</p>
+                <p class="text">You <span> know </span> you want to.</p>
+            </div>
+            <div class="section-two">
+                <p class="text">Let's do this!</p>
+                <form action="post" url="" id="main-form">
+                    <div class="inputs">
+                        <label for="user_name">FIRST NAME
+                            <input type="text" name="user_name" id="user_name" minlength="2">
+                        </label>
+                        <label for="user_lastname">LAST NAME
+                            <input type="text" name="user_lastname" id="user_lastname" minlength="2" maxlength="11">
+                        </label>
+                        <label for="user_email">EMAIL
+                            <input type="email" name="user_email" id="user_email" min="5" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$">
+                        </label>
+                        <label for="user_phone">PHONE NUMBER
+                            <input type="tel" name="user_phone" id="user_phone" minlength="6">
+                        </label>
+                        <div class="second-container">
+                            <label for="user_password">PASSWORD
+                                <input type="password" name="user_password" id="user_password" class="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+                                <span class="pass"></span>
+                            </label>
+                            <label for="user_password_confirm">CONFIRM PASSWORD
+                                <input type="password" name="user_password_confirm" id="user_password_confirm" class="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+                            </label>     
+                        </div>
+                <div class="test"></div>               
+                </form>    
+                </div>
+            </div>     
+            <div class="section-three">
+                <button type="submit" form="main-form" class="submit-btn">Create Account</button>
+                <p>Already have an account?<a href="#"> Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>      
+</body>
+</html>
